@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    </head>
+    <script>
+
+      var namesMonth = ["Selva Negra", "Barbara", "Bella", "Safira", "Gatilla", "Perra", "Fiona", "Calamarda", "Kokorazon", "La Kimberly", "Nayelix", "Camelia"];
+      var nameYear = ["La ogra", "La bella", "La epidemiologa", "La coneja", "La pandemia", "La diva", "La tiktoker", "La tejana", "La inventada", "La maraka"];
+      var namePhone = ["Setzi", "Potra", "Pasiva", "Mi cielo", "100Tifik", "Reguetonera", "Buchona", "Inmortal", "Empoderada", "Solterona"];
+
+      function getNameByMonth(obj) {
+        var name1 = document.getElementById("nombre1");
+        name1.innerText = namesMonth[obj.id];
+      }
+
+      function getNameByYear(obj) {
+        var name1 = document.getElementById("nombre2");
+        name1.innerText = nameYear[obj.id];
+      }
+
+      function getNameByPhone(obj) {
+        var name1 = document.getElementById("nombre3");
+        name1.innerText = namePhone[obj.id];
+      }
+
+    </script>
+    <body>
+       <h1>
+        ARMA TU NOMBRE DE DRAGA!
+       </h1>
+       <div style="margin: auto; width: 60%;padding: 50px;">
+       <div class="cute">
+          <span>
+            Mes de nacimiento
+          </span>
+          <div class="cute-content"> 
+                <div id ="0" onclick="getNameByMonth(this)">ENERO</div>
+                <div id ="1" onclick="getNameByMonth(this);">FEBRERO</div>
+                <div id ="2" onclick="getNameByMonth(this);">MARZO</div>
+                <div id ="3" onclick="getNameByMonth(this);">ABRIL</div>
+                <div id ="4" onclick="getNameByMonth(this);">MAYO</div>
+                <div id ="5" onclick="getNameByMonth(this);">JUNIO</div>
+                <div id ="6" onclick="getNameByMonth(this);">JULIO</div>
+                <div id ="7" onclick="getNameByMonth(this);">AGOSTO</div>
+                <div id ="8" onclick="getNameByMonth(this);">SEPTIEMBRE</div>
+                <div id ="9" onclick="getNameByMonth(this);">OCTUBRE</div>
+                <div id ="10" onclick="getNameByMonth(this);">NOVIEMBRE</div>
+                <div id ="11" onclick="getNameByMonth(this);">DICIEMBRE</div>
+          </div>
+       </div>
+
+       <div class="cute">
+        <span>
+          Ultimo numero del año que naciste
+        </span>
+        <div class="cute-content"> 
+              <div id ="0" onclick="getNameByYear(this);">0</div>
+              <div id ="1" onclick="getNameByYear(this);">1</div>
+              <div id ="2" onclick="getNameByYear(this);">2</div>
+              <div id ="3" onclick="getNameByYear(this);">3</div>
+              <div id ="4" onclick="getNameByYear(this);">4</div>
+              <div id ="5" onclick="getNameByYear(this);">5</div>
+              <div id ="6" onclick="getNameByYear(this);">6</div>
+              <div id ="7" onclick="getNameByYear(this);">7</div>
+              <div id ="8" onclick="getNameByYear(this);">8</div>
+              <div id ="9" onclick="getNameByYear(this);">9</div>
+        </div>
+     </div>
+    
+     <div class="cute">
+      <span>
+        Ultimo numero de tu celular
+      </span>
+      <div class="cute-content"> 
+            <div id ="0" onclick="getNameByPhone(this);">0</div>
+            <div id ="1" onclick="getNameByPhone(this);">1</div>
+            <div id ="2" onclick="getNameByPhone(this);">2</div>
+            <div id ="3" onclick="getNameByPhone(this);">3</div>
+            <div id ="4" onclick="getNameByPhone(this);">4</div>
+            <div id ="5" onclick="getNameByPhone(this);">5</div>
+            <div id ="6" onclick="getNameByPhone(this);">6</div>
+            <div id ="7" onclick="getNameByPhone(this);">7</div>
+            <div id ="8" onclick="getNameByPhone(this);">8</div>
+            <div id ="9" onclick="getNameByPhone(this);">9</div>
+      </div>
+   </div>
+  </div>
+  <div style="margin: auto; width: 60%;padding: 50px;">
+    <p id="nombre1" class="drag-name"></p>
+    <p id="nombre2" class="drag-name"></p>
+    <p id="nombre3" class="drag-name"></p>
+  </div>
+    </body>
+
+</html>
